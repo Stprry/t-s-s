@@ -9,7 +9,11 @@ export default function Hero() {
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div>
-          <h1 className="text-5xl font-bold">Box Office News!</h1>
+          <h1 className="flex justify-center pb-12 text-5xl font-bold ">
+            <span className="-inset-1 -skew-y-6 bg-accent px-6 pb-3 text-black">
+              The Software Strongman
+            </span>
+          </h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
@@ -19,11 +23,13 @@ export default function Hero() {
             Are you here for?
           </h5>
           <div className="flex w-full flex-col lg:flex-row">
-            <div className="card btn-ghost rounded-box grid h-32 flex-grow cursor-pointer place-items-center bg-base-300">
+            <div className="rounded-box m-2 grid h-32 flex-grow cursor-pointer place-items-center bg-gradient-to-b from-neutral  via-primary to-neutral   bg-size-200 p-10 text-white transition-all duration-500 hover:bg-right-bottom">
               Strongman
             </div>
+
             <div className="divider lg:divider-horizontal">OR</div>
-            <div className="card btn-ghost rounded-box grid h-32 flex-grow cursor-pointer place-items-center bg-base-300">
+
+            <div className="rounded-box m-2 grid h-32 flex-grow cursor-pointer place-items-center bg-gradient-to-b from-neutral  via-primary to-neutral  bg-size-200 p-10 text-white transition-all duration-500 hover:bg-right-bottom">
               Software
             </div>
           </div>

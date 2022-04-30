@@ -4,7 +4,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      //for gradient hover effect
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+    },
   },
   plugins: [require('daisyui')],
 
@@ -17,6 +22,6 @@ module.exports = {
     rtl: false,
     prefix: '',
     darkTheme: 'dark',
-    themes: ['forest'],
+    themes: ['synthwave'],
   },
 }
