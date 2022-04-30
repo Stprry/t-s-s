@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <Header />
 
       {/* Drawer Wrapper */}
-      <div className="drawer">
+      <div className="drawer mx-auto max-w-7xl">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           <div className="navbar w-full bg-base-300">
