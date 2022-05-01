@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import React from 'react'
 import ContentSection from '../components/ContentSection'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 const Home: NextPage = () => {
@@ -47,6 +48,9 @@ const Home: NextPage = () => {
           </div>
           {/* Conent */}
           <ContentSection />
+
+          {/* Footer */}
+          <Footer />
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
