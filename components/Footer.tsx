@@ -25,15 +25,24 @@ function Footer() {
       <div className="mt-0">
         <span className="footer-title text-primary">Social's</span>
         <div className="mb-4 grid grid-flow-col gap-4">
-          <a className="transition-all duration-300 hover:text-secondary">
+          <a
+            className="transition-all duration-300 hover:text-secondary"
+            href="https://www.instagram.com/softwarestrongman/"
+          >
             <AiOutlineInstagram size={40} className="" />
           </a>
 
-          <a className="transition-all duration-300 hover:text-secondary">
+          <a
+            className="transition-all duration-300 hover:text-secondary"
+            href="https://www.youtube.com/channel/UCX33WoczxgmVbzDCh6OZX5A"
+          >
             <AiOutlineYoutube size={40} className="" />
           </a>
 
-          <a className="transition-all duration-300 hover:text-secondary">
+          <a
+            className="transition-all duration-300 hover:text-secondary"
+            href="https://github.com/Stprry"
+          >
             <AiOutlineGithub size={40} className="" />
           </a>
         </div>
