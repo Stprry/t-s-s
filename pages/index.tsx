@@ -1,8 +1,10 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import React from 'react'
 import ContentSection from '../components/ContentSection'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import NavbarLogo from '../public/NarbarLogo.png'
 
 const Home: NextPage = () => {
   return (
@@ -33,15 +35,17 @@ const Home: NextPage = () => {
                 </svg>
               </label>
             </div>
-            <div className="mx-2 flex-1 px-2">Navbar Logo</div>
+            <div className="mx-2 flex-1 px-2">
+              <Image src={NavbarLogo} height="55" width="200" />
+            </div>
             <div className="hidden flex-none lg:block">
               <ul className="menu menu-horizontal">
                 {/* Nav Menu Items */}
                 <li>
-                  <a>Navbar Item 1</a>
+                  <a>Gym PR's 💪🏻</a>
                 </li>
                 <li>
-                  <a>Navbar Item 2</a>
+                  <a>Nerdy Projects 💻</a>
                 </li>
               </ul>
             </div>
@@ -57,10 +61,10 @@ const Home: NextPage = () => {
           <ul className="menu w-80 overflow-y-auto bg-base-100 p-4">
             {/* Drawer Menu Items */}
             <li>
-              <a>Sidebar Item 1</a>
+              <a>Gym PR's 💪🏻</a>
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+              <a>Nerdy Projects 💻</a>
             </li>
           </ul>
         </div>

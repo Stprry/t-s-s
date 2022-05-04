@@ -10,16 +10,13 @@ import Image from 'next/image'
 function Footer() {
   return (
     <footer className="footer bg-neutral p-4 text-neutral-content">
-      <div className="sticky bottom-0 ">
+      <div className="hidden place-items-center md:block">
         <p>
           <span className="font-bold text-primary">The Software Strongman</span>{' '}
           <br />
           A Personal portfolio site and blog for myself, all content and
           opinions featured are my own. / company's featured.
           <br /> <br />{' '}
-          <span className="font-bold text-secondary">
-            &copy;SoftwareStrongman {new Date().getFullYear()}
-          </span>
         </p>
       </div>
       <div className="mt-0">
@@ -46,6 +43,9 @@ function Footer() {
             <AiOutlineGithub size={40} className="" />
           </a>
         </div>
+        <span className="right-0 font-bold text-secondary">
+          &copy;SoftwareStrongman {new Date().getFullYear()}
+        </span>
       </div>
     </footer>
   )

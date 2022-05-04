@@ -3,14 +3,15 @@ import Image from 'next/image'
 import Logo from '../public/Software Strongman.png'
 export default function Hero() {
   return (
-    <div className="mx-auto flex max-w-7xl flex-col items-center justify-center bg-gray-50 py-8 px-4 sm:px-6 lg:py-12 lg:px-8">
+    <div className="mx-0 flex max-w-7xl flex-col items-center justify-center px-4 pb-0 pt-4 text-xl text-gray-50  sm:px-6 md:border-b-4  md:border-black  md:py-2  lg:px-8">
       <div className="flex-col">
-        <Image src={Logo} height="150" width={300} />
+        <Image src={Logo} height="100" width="200" />
       </div>
-      <h2 className="flex-col font-mono text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      <h2 className="hidden flex-col font-mono font-extrabold tracking-tight  md:block">
         <span className=" ">
           Hey, I'm Sam I'm a full stack developer by day and Amateur Strongman
-          by night.
+          by night. <br /> <br />
+          Check out some of my posts below ⤵ .
         </span>
       </h2>
     </div>
