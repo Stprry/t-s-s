@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 function Footer() {
   return (
-    <footer className="footer bg-neutral p-4 text-neutral-content">
+    <footer className="footer bg-neutral px-4 py-1 text-neutral-content">
       <div className="hidden place-items-center md:block">
         <p>
           <span className="font-bold text-primary">The Software Strongman</span>{' '}

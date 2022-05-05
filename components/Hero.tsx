@@ -1,11 +1,23 @@
 import React from 'react'
 import Image from 'next/image'
 import Logo from '../public/Software Strongman.png'
+
+// opt-out of image optimization, no-op
+const customLoader = ({ src }) => {
+  return src
+}
+
 export default function Hero() {
   return (
     <div className="mx-0 flex max-w-7xl flex-col items-center justify-center px-4 pb-0 pt-4 text-xl text-gray-50  sm:px-6 md:border-b-4  md:border-black  md:py-2  lg:px-8">
-      <div className="flex-col">
-        <Image src={Logo} height="100" width="200" />
+      <div className="hidden flex-col md:block">
+        <Image
+          src={Logo}
+          height="100"
+          width="200"
+          loader={customLoader}
+          className=""
+        />
       </div>
       <h2 className="hidden flex-col font-mono font-extrabold tracking-tight  md:block">
         <span className=" ">

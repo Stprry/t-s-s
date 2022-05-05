@@ -4,7 +4,7 @@ import React from 'react'
 import ContentSection from '../components/ContentSection'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import NavbarLogo from '../public/NarbarLogo.png'
+import NavbarLogo from '../public/Software Strongman.png'
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Nav Bar*/}
-          <div className="navbar sticky top-0 z-50 w-full bg-base-300">
+          <div className="navbar sticky top-0 z-50 w-full lg:bg-base-200">
             <div className="flex-none lg:hidden">
               <label htmlFor="my-drawer-3" className="btn btn-ghost btn-square">
                 <svg
@@ -35,14 +35,29 @@ const Home: NextPage = () => {
                 </svg>
               </label>
             </div>
-            <div className="mx-2 flex-1 px-2">
-              <Image src={NavbarLogo} height="55" width="200" />
+            <div className="mx-2 flex-1 justify-center px-2 md:invisible">
+              <Image src={NavbarLogo} height={60} width={120} />
             </div>
-            <div className="hidden flex-none lg:block">
+            <div className="hidden flex-none  lg:block">
               <ul className="menu menu-horizontal">
                 {/* Nav Menu Items */}
                 <li>
-                  <a>Gym PR's 💪🏻</a>
+                  <div className="dropdown">
+                    <label tabIndex={0} className="btn m-1">
+                      Click
+                    </label>
+                    <ul
+                      tabIndex={0}
+                      className="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
+                    >
+                      <li>
+                        <a>Item 1</a>
+                      </li>
+                      <li>
+                        <a>Item 2</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
                   <a>Nerdy Projects 💻</a>
