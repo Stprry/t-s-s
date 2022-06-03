@@ -5,7 +5,7 @@ import ContentSection from '../components/ContentSection'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import NavbarLogo from '../public/Software Strongman.png'
-
+import { TiThMenuOutline } from '../node_modules/react-icons/ti'
 const Home: NextPage = () => {
   return (
     <React.Fragment>
@@ -13,58 +13,15 @@ const Home: NextPage = () => {
       <Header />
 
       {/* Drawer Wrapper */}
-      <div className="drawer mx-auto max-w-7xl">
+      <div className="drawer mx-auto max-w-7xl bg-pink-500 md:bg-base-300 lg:bg-base-200">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col">
-          {/* Nav Bar*/}
-          <div className="navbar sticky top-0 z-50 w-full lg:bg-base-200">
-            <div className="flex-none lg:hidden">
-              <label htmlFor="my-drawer-3" className="btn btn-ghost btn-square">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="inline-block h-6 w-6 stroke-current"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-              </label>
-            </div>
-            <div className="mx-2 flex-1 justify-center px-2 md:invisible">
-              <Image src={NavbarLogo} height={60} width={120} />
-            </div>
-            <div className="hidden flex-none  lg:block">
-              <ul className="menu menu-horizontal">
-                {/* Nav Menu Items */}
-                <li>
-                  <div className="dropdown">
-                    <label tabIndex={0} className="btn m-1">
-                      Click
-                    </label>
-                    <ul
-                      tabIndex={0}
-                      className="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
-                    >
-                      <li>
-                        <a>Item 1</a>
-                      </li>
-                      <li>
-                        <a>Item 2</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a>Nerdy Projects 💻</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className="drawer-content">
+          <label htmlFor="my-drawer-3">
+            <TiThMenuOutline
+              size={30}
+              className="mt-4 ml-4 flex-1 justify-start text-base-200 hover:text-secondary md:text-gray-300"
+            />
+          </label>
           {/* Conent */}
           <ContentSection />
 

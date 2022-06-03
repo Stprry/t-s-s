@@ -15,7 +15,7 @@ function Footer() {
           <span className="font-bold text-primary">The Software Strongman</span>{' '}
           <br />
           A Personal portfolio site and blog for myself, all content and
-          opinions featured are my own. / company's featured.
+          opinions featured are my own.
           <br /> <br />{' '}
         </p>
       </div>
@@ -43,7 +43,7 @@ function Footer() {
             <AiOutlineGithub size={40} className="" />
           </a>
         </div>
-        <span className="right-0 font-bold text-secondary">
+        <span className="right-0 font-bold text-secondary md:pb-2">
           &copy;SoftwareStrongman {new Date().getFullYear()}
         </span>
       </div>

@@ -7,7 +7,7 @@ function ContentSection() {
   return (
     <>
       <Hero />
-      <SearchSection />
+      {/* <SearchSection /> */}
       <div className="max-h-screen overflow-y-auto">
         <GridSection />
       </div>
